@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+class K {
+
+public:
+int x;
+//public:
+    K(int a)
+    {
+        x=a;
+
+    }
+};
+class X
+{
+    public:
+    int p=0;
+    K Wodogrzmoty; K y;
+    //public:
+
+    X():p(0),y(++p),Wodogrzmoty(++p){}
+};
+
+int main()
+{
+    X Ya;
+    cout<<Ya.y.x;
+    cout<<Ya.Wodogrzmoty.x;
+    //cout << "Hello world!" << endl;
+    system("calc");
+    return 0;
+}
