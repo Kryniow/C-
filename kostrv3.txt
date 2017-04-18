@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+class K {
+
+int x;
+public:
+K(unsigned int w)
+{
+    x=w;
+                //x=2;
+    cout<<"Konstruktor"<< endl;
+}
+
+K(int w)
+    {
+    x=2;
+    cout<<"Konstruktor v2"<< endl;
+    }
+
+
+};
+int main()
+{
+
+    //K x;
+    K y(7);
+                //K x[2];
+                //x.przypisz();
+                //cout << "Hello world!" << endl;
+    return 0;
+}
