@@ -1,0 +1,60 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+int main(void)
+{
+    int ded,cli,saf,en;
+    cout<<"How long to cout down? : "<<endl;
+    cin>>ded;
+    if(ded>=5)
+    {
+
+    cout<<"Let's start counting down!\n";
+    while(ded)
+    {
+        cout<<".";
+        Sleep(1000);
+        cout<<".";
+        Sleep(1000);
+        cout<<".";
+        Sleep(1000);
+        cout<<"\n \a"<<ded<<endl;
+        --ded;
+        if(ded==3)
+        {
+            goto saf;
+        }
+    }
+
+     }
+    else
+     {
+         cout<<"Your number is too short. Try again!\n";
+        goto en;
+     }
+    saf:
+    if(ded==3)
+    {
+        cout<<"You can defuse bomb! Click first primary number!"<<endl;
+
+     cin>>cli;
+
+    switch(cli)
+    {
+
+    case 2:
+    cout<<"Very good! Bomb has been destroyed"<<endl;
+    cout<<"You are safe :-)";
+    break;
+
+    default:
+        {
+        cout<<"Bye bye :-)"<<" BOOOOM!!! "<<endl;
+        }
+    }
+    en:
+    return 0;
+    }
+}
+
+
